@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!---->
+<local:BindableMasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
+                  xmlns:local="clr-namespace:WKEU_BESR.Views;assembly=WKEU_BESR"
+                  x:Class="WKEU_BESR.MainPage"
+                  MasterBehavior="{Binding MenuBehavior}"       
+                  MasterPage="{Binding MenuPage}"
+                  DetailPage="{Binding DetailPage, Mode=TwoWay}"
+                  IsPresented="{Binding IsMenuVisible, Mode=TwoWay}"
+                                Title="{Binding MenuPage.Title}"
+                                BackgroundColor="#FF2E3237">
+
+</local:BindableMasterDetailPage>
+
+
